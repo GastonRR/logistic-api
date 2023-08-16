@@ -1,0 +1,55 @@
+{
+  "name": "express-ts-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GastonRR/express-ts-boilerplate.git",
+  "author": "Gaston R <gaston.requena@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
+    "lint": "ts-standard",
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "predeploy": "yarn install && yarn build"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "ts-node-dev": "2.0.0",
+    "ts-standard": "12.0.2",
+    "tsc-alias": "^1.8.7",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "ts-node": "^10.9.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ],
+    "rules": {
+      "@typescript-eslint/semi": [
+        2,
+        "always"
+      ],
+      "@typescript-eslint/comma-dangle": "off",
+      "@typescript-eslint/member-delimiter-style": [
+        2,
+        "always"
+      ],
+      "import/order": [
+        "warn",
+        {
+          "newlines-between": "always",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": false
+          }
+        }
+      ],
+      "import/newline-after-import": "error"
+    },
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  }
+}
