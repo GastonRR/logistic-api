@@ -1,0 +1,133 @@
+'use strict';
+
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface) {
+    await queryInterface.bulkInsert(
+      'users',
+      [
+        {
+          id: 1,
+          firstName: 'Avrahamov',
+          lastName: 'Mourant',
+          email: 'qmourant0@phoca.cz',
+          createdAt: '2021-03-13 10:55:38',
+          updatedAt: '2023-12-25 15:32:52',
+        },
+        {
+          id: 2,
+          firstName: 'Gifkins',
+          lastName: 'Yanez',
+          email: 'cyanez1@bbc.co.uk',
+          createdAt: '2020-01-30 10:42:41',
+          updatedAt: '2024-01-20 11:41:17',
+        },
+        {
+          id: 3,
+          firstName: 'Mc Harg',
+          lastName: 'Emeline',
+          email: 'iemeline2@bandcamp.com',
+          createdAt: '2022-02-03 09:32:18',
+          updatedAt: '2024-02-19 08:33:26',
+        },
+        {
+          id: 4,
+          firstName: 'Menpes',
+          lastName: 'Dunkerly',
+          email: 'mdunkerly3@indiegogo.com',
+          createdAt: '2021-04-09 02:27:00',
+          updatedAt: '2024-01-12 05:22:55',
+        },
+        {
+          id: 5,
+          firstName: 'Elgood',
+          lastName: 'Di Giacomo',
+          email: 'sdigiacomo4@scientificamerican.com',
+          createdAt: '2022-02-02 06:04:32',
+          updatedAt: '2024-06-05 00:29:28',
+        },
+        {
+          id: 6,
+          firstName: 'Rawls',
+          lastName: 'Cantua',
+          email: 'mcantua5@time.com',
+          createdAt: '2022-01-07 21:00:13',
+          updatedAt: '2024-07-14 18:01:53',
+        },
+        {
+          id: 7,
+          firstName: 'Rawet',
+          lastName: 'Muslim',
+          email: 'amuslim6@gnu.org',
+          createdAt: '2020-10-22 23:53:05',
+          updatedAt: '2024-03-19 11:01:02',
+        },
+        {
+          id: 8,
+          firstName: 'Hulatt',
+          lastName: 'Lombard',
+          email: 'dlombard7@ed.gov',
+          createdAt: '2019-10-19 17:22:58',
+          updatedAt: '2024-04-20 15:18:26',
+        },
+        {
+          id: 9,
+          firstName: 'Drewes',
+          lastName: 'Attewell',
+          email: 'gattewell8@ow.ly',
+          createdAt: '2020-02-20 20:32:20',
+          updatedAt: '2024-05-23 18:09:24',
+        },
+        {
+          id: 10,
+          firstName: 'Craddy',
+          lastName: 'Colafate',
+          email: 'ecolafate9@1688.com',
+          createdAt: '2021-02-22 04:58:21',
+          updatedAt: '2024-07-20 21:10:50',
+        },
+        {
+          id: 11,
+          firstName: 'Trevena',
+          lastName: 'Klessmann',
+          email: 'hklessmanna@thetimes.co.uk',
+          createdAt: '2022-03-18 22:05:09',
+          updatedAt: '2024-05-21 02:21:25',
+        },
+        {
+          id: 12,
+          firstName: 'Agglione',
+          lastName: 'Bilt',
+          email: 'abiltb@hud.gov',
+          createdAt: '2021-07-29 21:09:10',
+          updatedAt: '2024-05-23 14:27:48',
+        },
+        {
+          id: 13,
+          firstName: 'Diben',
+          lastName: 'Friberg',
+          email: 'afribergc@hao123.com',
+          createdAt: '2022-05-31 16:44:03',
+          updatedAt: '2024-01-11 21:48:46',
+        },
+        {
+          id: 14,
+          firstName: 'Divill',
+          lastName: 'Brewett',
+          email: 'sbrewettd@networkadvertising.org',
+          createdAt: '2021-06-17 08:37:55',
+          updatedAt: '2024-06-01 09:29:56',
+        },
+        {
+          id: 15,
+          firstName: 'Lyver',
+          lastName: 'MacMeekan',
+          email: 'smacmeekane@nature.com',
+          createdAt: '2022-03-17 10:25:35',
+          updatedAt: '2024-05-08 08:54:17',
+        },
+      ],
+      {}
+    );
+  },
+};
