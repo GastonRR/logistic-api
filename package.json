@@ -9,7 +9,8 @@
     "dev": "ts-node-dev -r tsconfig-paths/register src/index.ts",
     "lint": "ts-standard",
     "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
-    "predeploy": "yarn install && yarn build"
+    "predeploy": "yarn install && yarn build",
+    "prepare:db": "sequelize db:create && sequelize db:migrate && sequelize db:seed:all"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
